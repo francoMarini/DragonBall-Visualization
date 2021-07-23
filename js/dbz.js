@@ -141,8 +141,11 @@ function nodeMouseover() {
         .duration(400)
         .attr("transform", "scale(2)")
         .style("stroke",function(d) {
-            if(d.status == "Super Saiyan") {
-                return "red";
+            if(d.type == "Super Saiyan") {
+                return "yellow";
+            }
+            if(d.type == "Fusion") {
+                return "blue";
             }
             else return "grey";
         })
