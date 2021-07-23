@@ -6,5 +6,37 @@
         <script src="//d3js.org/d3.v3.min.js"></script>
         <script src="js/dbz.js"></script>
     </head>
-    <body></body>
+    <body>
+      <form autocomplete="off">
+          <legend>Legend</legend>
+
+          <div>
+              <input type="checkbox" id="transformation" name="feature" onchange="showHideTransformation()"
+                     value="transformation" checked />
+              <label for="transformation">Transformations</label>
+          </div>
+
+          <div>
+              <input type="checkbox" id="family" name="feature" onchange="showHideFamily()"
+                     value="family" checked />
+              <label for="family">Family ties</label>
+          </div>
+
+          <div>
+              <input type="checkbox" id="create" name="feature" onchange="showHideCreate()"
+                     value="Create" checked/>
+              <label for="create">Creations</label>
+          </div>
+          <div>
+              <input type="checkbox" id="alliance" name="feature" onchange="showHideAlliance()"
+                     value="alliance" checked />
+              <label for="alliance">Friends</label>
+          </div>
+          <div>
+              <input type="checkbox" id="fight" name="feature" onchange="showHideFight()"
+                     value="fight" />
+              <label for="fight">Fights</label>
+          </div>
+      </form>
+    </body>
 </html>
