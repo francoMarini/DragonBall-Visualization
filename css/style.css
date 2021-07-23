@@ -16,7 +16,7 @@ body {
 }
 
 svg {
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
@@ -35,4 +35,135 @@ svg {
 .text {
     font: 30px sans-serif;
     pointer-events: none;
+}
+
+form{
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    position:absolute;
+
+    right: 5px;
+    top: 10px;
+
+}
+legend {
+    width: 150px;
+    color: black;
+    border: 1px;
+    border-style: double;
+    padding: 3px 6px;
+    position: relative;
+    top: -6px;
+    fill: white;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+input {
+    margin: .4rem;
+}
+label {
+    cursor: pointer;
+    color: #555;
+    font-weight: bold;
+
+}
+label[for^=transformation] {
+    color: royalblue;
+}
+label[for^=family] {
+    color: pink;
+}
+label[for^=create] {
+    color: tomato;
+}
+label[for^=alliance] {
+    color: green;
+}
+
+label[for^=fight] {
+    color: black;
+}
+
+
+.link.transformation {
+    fill: black;
+    stroke: royalblue;
+    stroke-width: 2px;
+    stroke-opacity:0.5;
+}
+
+
+.highlight.transformation {
+    opacity: 1 !important;
+    stroke: royalblue !important;
+    stroke-width: 4px !important;
+    stroke-opacity: 1 !important;
+}
+
+
+
+.link.create {
+    fill: black;
+    stroke: tomato;
+    stroke-width: 2px;
+    stroke-opacity:0.5;
+}
+
+
+.highlight.create {
+    opacity: 1 !important;
+    stroke: tomato !important;
+    stroke-width: 4px !important;
+    stroke-opacity: 1 !important;
+}
+
+
+.link.family {
+    fill: black;
+    stroke: pink;
+    stroke-width: 2px;
+    stroke-opacity:0.5;
+}
+
+
+.highlight.family {
+    opacity: 1 !important;
+    stroke: pink !important;
+    stroke-width: 4px !important;
+    stroke-opacity: 1 !important;
+}
+
+.link.fight {
+    fill: black;
+    stroke: black;
+    stroke-width: 4px;
+    stroke-opacity:0.5;
+}
+
+
+.highlight.fight {
+    opacity: 0.8 !important;
+    stroke: black !important;
+    stroke-width: 8px !important;
+    stroke-opacity: 0.5 !important;
+}
+
+.link.alliance {
+    fill: black;
+    stroke: green;
+    stroke-width: 2px;
+    stroke-opacity:0.5;
+}
+
+
+.highlight.alliance {
+    opacity: 1 !important;
+    stroke: green !important;
+    stroke-width: 4px !important;
+    stroke-opacity: 1 !important;
 }
