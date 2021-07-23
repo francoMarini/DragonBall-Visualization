@@ -57,6 +57,21 @@
             "saga": "Majin Buu Saga",
             "name": "Vegito SSJ",
             "id": 9
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Raditz",
+            "id": 10
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Nappa",
+            "id": 11
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Saibamen",
+            "id": 12
         }
     ],
     "links": [
@@ -104,6 +119,36 @@
             "relation": "transformation",
             "source": "4",
             "target": "7"
+        },
+        {
+            "relation": "fight",
+            "source": "0",
+            "target": "4"
+        },
+        {
+            "relation": "create",
+            "source": "11",
+            "target": "12"
+        },
+        {
+            "relation": "alliance",
+            "source": "4",
+            "target": "10"
+        },
+        {
+            "relation": "alliance",
+            "source": "4",
+            "target": "11"
+        },
+        {
+            "relation": "alliance",
+            "source": "10",
+            "target": "11"
+        },
+        {
+            "relation": "family",
+            "source": "0",
+            "target": "10"
         }
     ]
 }
