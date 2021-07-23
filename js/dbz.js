@@ -3,6 +3,16 @@ var nodes = [];
 var s, t = null;
 var svgSize = null;
 
+
+// Variabili per mostrare e nascondere le relazioni
+
+var showTransformation = true;
+var showCreate = true;
+var showFamily = true;
+var showFight = false;
+var showAlliance = true;
+
+
 function play() {
 
     d3.json("../data/DBZ_start.json", function(data) {
@@ -24,6 +34,10 @@ function play() {
 
         var svg = d3.select("body").append("svg")
             .attr("id", "graph")
+            .call(d3.behavior.zoom().on("zoom", function () {                     // Implementazione Zoom
+                svg.attr("transform", " scale(" + d3.event.scale + ")")
+            }))
+
         var defs = svg.append('svg:defs');
         nodes.forEach(element => {
             defs.append('svg:pattern')
@@ -61,6 +75,10 @@ function play() {
                 return ("link s" + source + " t" + target + " " +  d.relation);
             })
 
+      // Nascondo i combattimenti
+      d3.selectAll(".link.fight")
+        .style("visibility", "hidden");
+
         var node = svg.selectAll(".node")
             .data(force.nodes())
             .enter().append("g")
@@ -83,7 +101,7 @@ function play() {
             })
             .attr("r", 30)
             .style("fill",function(d) {
-                return "url(#image-" + d.id +")"; 
+                return "url(#image-" + d.id +")";
             })
             .style("stroke", "#fff")
             .style("stroke-width", "1px");
@@ -204,6 +222,68 @@ function deleteDuplicates(array) {
     return array.filter(function(item, pos) {
         return array.indexOf(item) == pos && item != undefined;
     })
+}
+
+// Aggiunta
+function showHideTransformation(){
+    showTransformation = !showTransformation;
+    if (showTransformation) {
+      d3.selectAll(".link.transformation")
+        .style("visibility", "visible");
+    }else{
+      d3.selectAll(".link.transformation")
+        .style("visibility", "hidden");
+    }
+
+}
+
+function showHideCreate(){
+    showCreate = !showCreate;
+    if (showCreate) {
+      d3.selectAll(".link.create")
+        .style("visibility", "visible");
+    }else{
+      d3.selectAll(".link.create")
+        .style("visibility", "hidden");
+    }
+
+}
+
+function showHideFamily(){
+    showFamily = !showFamily;
+    if (showFamily) {
+      d3.selectAll(".link.family")
+        .style("visibility", "visible");
+    }else{
+      d3.selectAll(".link.family")
+        .style("visibility", "hidden");
+    }
+
+}
+
+
+function showHideFight(){
+    showFight = !showFight;
+    if (showFight) {
+      d3.selectAll(".link.fight")
+        .style("visibility", "visible");
+    }else{
+      d3.selectAll(".link.fight")
+        .style("visibility", "hidden");
+    }
+
+}
+
+function showHideAlliance(){
+    showAlliance = !showAlliance;
+    if (showAlliance) {
+      d3.selectAll(".link.alliance")
+        .style("visibility", "visible");
+    }else{
+      d3.selectAll(".link.alliance")
+        .style("visibility", "hidden");
+    }
+
 }
 
 play();
