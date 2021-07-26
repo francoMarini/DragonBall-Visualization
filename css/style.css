@@ -4,13 +4,8 @@ html {
     height: calc(100% - 3px);
 }
 body {
-    background: linear-gradient(
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.7)
-        ), url("../data/imgs/sfondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background:black;
+    background-image: url("http://static.tumblr.com/lxn1yld/Hnxnxaqya/space.gif");
     height: 100%;
     margin: 0;
 }
@@ -45,10 +40,19 @@ form{
     border-color: gray;
     position:absolute;
 
-    right: 5px;
-    top: 10px;
+    right: 5%;
+    top: 30%;
 
 }
+
+body img{ 
+    position:fixed;
+    width: 35%; 
+    height: auto;
+    margin-left:68%;
+    margin-top: -3% ;
+}
+
 legend {
     width: 150px;
     color: black;
@@ -91,7 +95,49 @@ label[for^=fight] {
     color: black;
 }
 
+.lightning{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://img1.wallspic.com/previews/4/3/7/5/5/155734/155734-goku-zamasu-vegeta-gohan-dragon_ball-x750.jpg');
+  background-position: center center;
+  background-origin: content-box;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-filter: brightness(3);
+  filter: brightness(1);
+  -o-filter: brightness(1);
+  -moz-filter: brightness(1);
+  z-index: -1;
+}
 
+/*Now just a opacity animation*/
+.flashit{
+-webkit-animation: flash ease-out 7s infinite;
+-moz-animation: flash ease-out 7s infinite;
+animation: flash ease-out 7s infinite;
+animation-delay: 0s;
+}
+
+@-webkit-keyframes flash {
+    from { opacity: 0; } 
+  92% { opacity: 0; }
+    93% { opacity: 0.6; }
+  94% { opacity: 0.2; }
+  96% { opacity: 0.9; } 
+    to { opacity: 0; }
+}
+
+@keyframes flash {
+    from { opacity: 0; } 
+    92% { opacity: 0; }
+    93% { opacity: 0.6; }
+    94% { opacity: 0.2; }
+    96% { opacity: 1; } 
+    to { opacity: 0; }
+}
 .link.transformation {
     fill: black;
     stroke: royalblue;
@@ -168,4 +214,10 @@ label[for^=fight] {
     stroke: green !important;
     stroke-width: 4px !important;
     stroke-opacity: 1 !important;
+}
+
+div audio {
+    position: fixed;
+    margin-left: 71%;
+    margin-top: 45%;
 }
