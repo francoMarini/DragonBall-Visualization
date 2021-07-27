@@ -54,6 +54,7 @@ body img{
 }
 
 legend {
+    position:fixed;
     width: 150px;
     color: black;
     border: 1px;
@@ -101,7 +102,7 @@ label[for^=fight] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://img1.wallspic.com/previews/4/3/7/5/5/155734/155734-goku-zamasu-vegeta-gohan-dragon_ball-x750.jpg');
+  /*background: url('https://img1.wallspic.com/previews/4/3/7/5/5/155734/155734-goku-zamasu-vegeta-gohan-dragon_ball-x750.jpg');*/
   background-position: center center;
   background-origin: content-box;
   background-size: cover;
@@ -216,8 +217,264 @@ animation-delay: 0s;
     stroke-opacity: 1 !important;
 }
 
+.btn{
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
+
+.btn .one {
+    color: white;
+    border: 1px solid;
+    background-color: transparent;
+    background: url(https://img.favpng.com/5/19/21/kinto-un-goku-dragon-ball-gohan-cloud-png-favpng-hzV3YWhYvmTqtdGpTdrvpXCFH.jpg) 1pxno-repeat;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px 20px;
+    font-weight: 300;
+    color: #4cc9f0;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow: -20px 20px 10px $button-color-shadow;
+    transition: all 0.5s ease-in-out;
+}
+
+    
+    .btn .one::before{
+      dislpay: block;
+      content:"";
+      position: absolute;
+      width: 20px;
+      height: 100%;
+      left: -20px;
+      top: 10px;
+      background: $button-color-border;
+      transform: rotate(0deg) skewY(-45deg); 
+    }
+      
+    .btn .one::after{
+        dislpay: block;
+        content:"";
+        position: absolute;
+        bottom: -20px;
+        left: -10px;
+        height: 20px;
+        width: 100%;
+        transform: rotate(0deg) skewX(-45deg); 
+        background: $button-color-border;
+        transform: rotate(45deg) scewY(-45deg);
+    }
+
+.btn .two {
+    color: white;
+    border: 1px solid;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px 20px;
+    font-weight: 300;
+    color: #f038ff;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow: -20px 20px 10px $button-color-shadow;
+    transition: all 0.5s ease-in-out; 
+}
+
+.btn .two::before{
+      dislpay: block;
+      content:"";
+      position: absolute;
+      width: 20px;
+      height: 100%;
+      left: -20px;
+      top: 10px;
+      background: $button-color-border;
+      transform: rotate(0deg) skewY(-45deg); 
+    }
+      
+.btn .two::after{
+        dislpay: block;
+        content:"";
+        position: absolute;
+        bottom: -20px;
+        left: -10px;
+        height: 20px;
+        width: 100%;
+        transform: rotate(0deg) skewX(-45deg); 
+        background: $button-color-border;
+        transform: rotate(45deg) scewY(-45deg);
+}
+
+.btn .three {
+    color: white;
+    border: 1px solid;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px 20px;
+    font-weight: 300;
+    color: #b9e769;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow: -20px 20px 10px $button-color-shadow;
+    transition: all 0.5s ease-in-out; 
+}
+.btn .three::before{
+      dislpay: block;
+      content:"";
+      position: absolute;
+      width: 20px;
+      height: 100%;
+      left: -20px;
+      top: 10px;
+      background: $button-color-border;
+      transform: rotate(0deg) skewY(-45deg); 
+    }
+      
+.btn .three::after{
+        dislpay: block;
+        content:"";
+        position: absolute;
+        bottom: -20px;
+        left: -10px;
+        height: 20px;
+        width: 100%;
+        transform: rotate(0deg) skewX(-45deg); 
+        background: $button-color-border;
+        transform: rotate(45deg) scewY(-45deg);
+}
+
+.btn .four {
+    color: white;
+    border: 1px solid;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px 20px;
+    font-weight: 300;
+    color: #808080;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow: -20px 20px 10px $button-color-shadow;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn .four::before{
+      dislpay: block;
+      content:"";
+      position: absolute;
+      width: 20px;
+      height: 100%;
+      left: -20px;
+      top: 10px;
+      background: $button-color-border;
+      transform: rotate(0deg) skewY(-45deg); 
+    }
+      
+.btn .four::after{
+        dislpay: block;
+        content:"";
+        position: absolute;
+        bottom: -20px;
+        left: -10px;
+        height: 20px;
+        width: 100%;
+        transform: rotate(0deg) skewX(-45deg); 
+        background: $button-color-border;
+        transform: rotate(45deg) scewY(-45deg);
+}
+
+.btn .five {
+    color: white;
+    border: 1px solid;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px 20px;
+    font-weight: 300;
+    color: #008000;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow: -20px 20px 10px $button-color-shadow;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.btn .five::before{
+      dislpay: block;
+      content:"";
+      position: absolute;
+      width: 20px;
+      height: 100%;
+      left: -20px;
+      top: 10px;
+      background: $button-color-border;
+      transform: rotate(0deg) skewY(-45deg); 
+    }
+      
+.btn .five::after{
+        dislpay: block;
+        content:"";
+        position: absolute;
+        bottom: -20px;
+        left: -10px;
+        height: 20px;
+        width: 100%;
+        transform: rotate(0deg) skewX(-45deg); 
+        background: $button-color-border;
+        transform: rotate(45deg) scewY(-45deg);
+}
+.btn:hover {
+  color: white;
+  border: 0;
+}
+
+.btn .one:hover {
+  background-color:transparent;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  box-shadow: 10px 10px 130px 50px rgba(76,201,240,1);
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  box-shadow: -50px 50px 30px 
+}
+
+.btn .two:hover {
+  background-color:transparent;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+  box-shadow: 10px 10px 130px 50px rgba(240, 56, 255, 1);
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  box-shadow: -50px 50px 30px 
+}
+
+.btn .three:hover {
+  background-color:transparent;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+  box-shadow: 10px 10px 130px 50px rgba(185, 231, 105, 1);
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  box-shadow: -50px 50px 30px
+}
+
+.btn .four:hover {
+  background-color:transparent;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  box-shadow: 10px 10px 130px 50px rgba(76,201,240,1);
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  box-shadow: -50px 50px 30px
+}
+
+.btn .five:hover {
+  background-color:transparent;
+  -webkit-box-shadow: 10px 10px 99px 6px rgb(60, 179, 113);
+  -moz-box-shadow: 10px 10px 99px 6px rgb(60, 179, 113);
+  box-shadow: 10px 10px 130px 50px rgb(60, 179, 113);
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  box-shadow: -50px 50px 30px
+}
+
+
 div audio {
     position: fixed;
     margin-left: 71%;
-    margin-top: 45%;
+    margin-bottom: 10px;
+    bottom: 0;
 }
