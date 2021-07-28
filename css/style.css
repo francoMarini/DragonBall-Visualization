@@ -14,6 +14,7 @@ svg {
     z-index: 1;
     width: 100%;
     height: 100%;
+    display: flex;
 }
 
 .link {
@@ -39,7 +40,6 @@ form{
     border-width: 2px;
     border-color: gray;
     position:absolute;
-
     right: 7%;
     top: 16%;
 
@@ -51,6 +51,8 @@ body img{
     height: auto;
     margin-left:68%;
     margin-top: -3% ;
+    display: flex;
+
 }
 
 legend {
