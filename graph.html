@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dragon Ball Z</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="//d3js.org/d3.v3.min.js"></script>
+        <script src="js/dbz.js"></script>
+    </head>
+    <body>
+	<div>
+            <audio  controls autoplay loop>
+                <source src="music.mp3" type="audio/mp3">
+            </audio>
+
+       </div>
+      <div class="initials"></div>
+      <div>
+          <img src="pergamena.png">
+          <div class="btn">
+            <button class="one" >Saiyans</button>
+            <button  class="two">Fusions</button>
+            <button class="three">Dragons</button>
+            <button class="four">Androids</button>
+            <button class="five">Namekians</button>
+          </div>
+      </div>
+      
+      <form autocomplete="off">
+          <legend>Legend</legend>
+
+          <div>
+              <input type="checkbox" id="transformation" name="feature" onchange="showHideTransformation()"
+                     value="transformation" checked />
+              <label for="transformation">Transformations</label>
+          </div>
+
+          <div>
+              <input type="checkbox" id="family" name="feature" onchange="showHideFamily()"
+                     value="family" checked />
+              <label for="family">Family ties</label>
+          </div>
+
+          <div>
+              <input type="checkbox" id="create" name="feature" onchange="showHideCreate()"
+                     value="Create" checked/>
+              <label for="create">Creations</label>
+          </div>
+          <div>
+              <input type="checkbox" id="alliance" name="feature" onchange="showHideAlliance()"
+                     value="alliance" checked />
+              <label for="alliance">Friends</label>
+          </div>
+          <div>
+              <input type="checkbox" id="fight" name="feature" onchange="showHideFight()"
+                     value="fight" />
+              <label for="fight">Fights</label>
+          </div>
+      </form>
+      
+      <div class="lightning flashit"></div>
+    </body>
+</html>

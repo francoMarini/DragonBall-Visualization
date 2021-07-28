@@ -2,57 +2,33 @@
     <head>
         <meta charset="UTF-8">
         <title>Dragon Ball Z</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style1.css">
         <script src="//d3js.org/d3.v3.min.js"></script>
-        <script src="js/dbz.js"></script>
+        <script type="text/javascript">
+            const body = document.body;
+const btn = document.querySelectorAll('.button')[0];
+
+btn.addEventListener('mouseenter', () => {
+    body.classList.add('show');
+});
+
+btn.addEventListener('mouseleave', () => {
+    body.classList.remove('show');
+});
+        </script>
+
+
     </head>
     <body>
-	<div>
-            <audio  controls autoplay loop>
-                <source src="music.mp3" type="audio/mp3">
-            </audio>
-
-       </div>
-      <div class="initials"></div>
-      <img src="DragonVellum.png">
-      <form autocomplete="off">
-          <legend>Legend</legend>
-
-          <div>
-              <input type="checkbox" id="transformation" name="feature" onchange="showHideTransformation()"
-                     value="transformation" checked />
-              <label for="transformation">Transformations</label>
-          </div>
-
-          <div>
-              <input type="checkbox" id="family" name="feature" onchange="showHideFamily()"
-                     value="family" checked />
-              <label for="family">Family ties</label>
-          </div>
-
-          <div>
-              <input type="checkbox" id="create" name="feature" onchange="showHideCreate()"
-                     value="Create" checked/>
-              <label for="create">Creations</label>
-          </div>
-          <div>
-              <input type="checkbox" id="alliance" name="feature" onchange="showHideAlliance()"
-                     value="alliance" checked />
-              <label for="alliance">Friends</label>
-          </div>
-          <div>
-              <input type="checkbox" id="fight" name="feature" onchange="showHideFight()"
-                     value="fight" />
-              <label for="fight">Fights</label>
-          </div>
-      </form>
-      <div class="btn">
-        <button class="one" >Saiyans</button>
-        <button  class="two">Fusions</button>
-        <button class="three">Dragons</button>
-        <button class="four">Androids</button>
-        <button class="five">Namekians</button>
-      </div>
-      <div class="lightning flashit"></div>
+        <img class="db" src="db.png">
+        <div class="button">
+    <a href="graph.html">
+        Start Your Journey 
+        <span class="shift">›</span>
+    </a>
+    <div class="mask"></div>
+</div>
+    
+     
     </body>
 </html>
