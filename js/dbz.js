@@ -165,15 +165,19 @@ function nodeMouseover() {
     d3.select(this).select("circle")
         .transition()
         .duration(400)
-        .attr("transform", "scale(2)")
+        .attr("transform", function(d) {
+          if (d.state=="t")
+             return "scale(3)";
+          else
+             return "scale(2)";
+        })
         .style("stroke",function(d) {
-            if(d.type == "Super Saiyan") {
-                return "yellow";
-            }
-            if(d.type == "Fusion") {
-                return "blue";
-            }
-            else return "grey";
+          if (d.type=="Saiyan") return "red";
+          if (d.type=="Fusion") return "blue";
+          if (d.type=="Dragon") return "white";
+          if (d.type=="Android") return "grey";
+          if (d.type=="Namekian") return "green";
+          else return "grey";
         })
         .style("stroke-width", "2px");
 
