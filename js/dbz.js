@@ -66,9 +66,10 @@ function play() {
         .linkDistance(function(link) {
             if (link.relation=="transformation")   // Gli archi relativi alle trasformazioni saranno più corti
                return 30;
-            return 160;
+            return 60;
         })
-        .charge(-150)
+        .charge(-450)
+        .gravity(0.34)
         .on("tick", tick)
         .start();
 
