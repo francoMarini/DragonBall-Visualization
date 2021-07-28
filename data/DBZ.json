@@ -6,19 +6,19 @@
             "id": 0
         },
         {
-            "type": "Super Saiyan",
+            "type": "Dragon",
             "saga": "Frieza Saga",
             "name": "Goku SSJ",
             "id": 1
         },
         {
-            "type": "Super Saiyan",
+            "type": "Saiyan",
             "saga": "Majin Buu Saga",
             "name": "Goku SSJ2",
             "id": 2
         },
         {
-            "type": "Super Saiyan",
+            "type": "Namekian",
             "saga": "Majin Buu Saga",
             "name": "Goku SSJ3",
             "id": 3
@@ -29,7 +29,7 @@
             "id": 4
         },
         {
-          "type": "Super Saiyan",
+          "type": "Android",
           "saga": "Cell Games Saga",
           "name": "Vegeta SSJ",
           "id": 5

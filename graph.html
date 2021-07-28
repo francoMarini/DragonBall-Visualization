@@ -17,14 +17,14 @@
       <div>
           <img src="pergamena.png">
           <div class="btn">
-            <button class="one" >Saiyans</button>
-            <button  class="two">Fusions</button>
-            <button class="three">Dragons</button>
-            <button class="four">Androids</button>
-            <button class="five">Namekians</button>
+            <button class="one" onmousedown="statusMouseover('Saiyan')"  onmouseup="statusMouseout()">Saiyans</button>
+            <button class="two" onmousedown="statusMouseover('Fusion')"  onmouseup="statusMouseout()">Fusions</button>
+            <button class="three" onmousedown="statusMouseover('Dragon')"  onmouseup="statusMouseout()">Dragons</button>
+            <button class="four" onmousedown="statusMouseover('Android')"  onmouseup="statusMouseout()">Androids</button>
+            <button class="five" onmousedown="statusMouseover('Namekian')"  onmouseup="statusMouseout()">Namekians</button>
           </div>
       </div>
-      
+
       <form autocomplete="off">
           <legend>Legend</legend>
 
@@ -56,7 +56,7 @@
               <label for="fight">Fights</label>
           </div>
       </form>
-      
+
       <div class="lightning flashit"></div>
     </body>
 </html>

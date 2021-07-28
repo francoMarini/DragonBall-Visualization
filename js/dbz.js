@@ -2,7 +2,9 @@ var links = [];
 var nodes = [];
 var s, t = null;
 var svgSize = null;
-
+var statusSelector = null;
+var svgSize = null;
+var svg=null;
 
 // Variabili per mostrare e nascondere le relazioni
 
@@ -83,9 +85,10 @@ function play() {
             .data(force.nodes())
             .enter().append("g")
             .attr("class", function(d) {
-                if (d.group != undefined) {
-                    return "node" + d.group.replace(/\s+/g, '').replace(/'/, '');}
-                else return "node";
+                if (d.type != undefined) {
+                    console.log("node " + d.type.replace(/\s+/g, '').replace(/'/, ''))
+                    return "node " + d.type.replace(/\s+/g, '').replace(/'/, '');}
+                else return "node none";
             })
             .attr("id", function(d) {
                return "node-" + d.id;
@@ -97,7 +100,7 @@ function play() {
 
         svg.selectAll(".node").append("circle")
             .attr("class", function(d) {
-                return d.status;
+                return d.type;
             })
             .attr("r", 30)
             .style("fill",function(d) {
@@ -288,5 +291,49 @@ function showHideAlliance(){
     }
 
 }
+
+function statusMouseover(status) {
+console.log("ce entro");
+    if (status == "Saiyan") statusSelector = ".Fusion, .Namekian, .Dragon, .Android, .none";
+    else if (status == "Fusion") statusSelector =".Saiyan, .Namekian, .Dragon, .Android, .none";
+    else if (status == "Namekian") statusSelector =".Saiyan, .Fusion, .Dragon, .Android, .none";
+    else if (status == "Dragon") statusSelector =".Saiyan, .Namekian, .Fusion, .Android, .none";
+    else if (status == "Android") statusSelector =".Saiyan, .Namekian, .Dragon, .Fusion, .none";
+    else statusSelector = ".Saiyan, .Namekian, .Dragon, .Android, .Fusion";
+
+    d3.selectAll(statusSelector).select("circle")
+        .transition()
+        .duration(400)
+        .style("opacity", "0.3")
+        .attr("transform", "scale(1)")
+        .style("stroke", "#fff");
+
+    d3.selectAll("." + status).select("circle")
+        .transition()
+        .duration(400)
+        .style("opacity", "1")
+        .style("stroke", function()  {
+            if (status=="Saiyan") return "red";
+            if (status=="Namekian") return "green";
+            if (status=="Dragon") return "white";
+            if (status=="Fusion") return "blue";
+            if (status=="Android") return "grey";
+            else return "grey";
+        })
+        .attr("transform", "scale(1.5)")
+        .style("stroke-width", "2px");
+
+}
+
+function statusMouseout() {
+    d3.selectAll("circle")
+        .transition()
+        .duration(400)
+        .attr("transform", "scale(1)")
+        .style("stroke", "#fff")
+        .style("opacity", "1")
+        .style("stroke-width", "1px");
+}
+
 
 play();
