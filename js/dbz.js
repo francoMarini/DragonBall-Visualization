@@ -20,12 +20,28 @@ function play() {
     d3.json("../data/DBZ.json", function(data) {
 
         nodes = data["nodes"];
-        links = data["links"];
+
+
+        links=[]
+
+        data["links"].forEach(link => {
+            if (link.relation=="create" && showCreate)
+              links.push(link);
+            if (link.relation=="family" && showFamily)
+              links.push(link);
+            if (link.relation=="alliance" && showAlliance)
+              links.push(link);
+            if (link.relation=="fight" && showFight)
+              links.push(link);
+            if (link.relation=="transformation")
+              links.push(link);
+        });
 
         links.forEach(link => {
             link.source = parseInt(link.source);
             link.target = parseInt(link.target);
         });
+
 
         var notUniqueRelations = [];
         links.forEach(elem => {
@@ -34,7 +50,7 @@ function play() {
 
         var relations = deleteDuplicates(notUniqueRelations);
 
-        var svg = d3.select("body").append("svg")
+        svg = d3.select("body").append("svg")
             .attr("id", "graph")
             .call(d3.behavior.zoom().on("zoom", function () {                     // Implementazione Zoom
                 svg.attr("transform", " scale(" + d3.event.scale + ")")
@@ -237,65 +253,32 @@ function deleteDuplicates(array) {
     })
 }
 
-// Aggiunta
-function showHideTransformation(){
-    showTransformation = !showTransformation;
-    if (showTransformation) {
-      d3.selectAll(".link.transformation")
-        .style("visibility", "visible");
-    }else{
-      d3.selectAll(".link.transformation")
-        .style("visibility", "hidden");
-    }
-
-}
 
 function showHideCreate(){
     showCreate = !showCreate;
-    if (showCreate) {
-      d3.selectAll(".link.create")
-        .style("visibility", "visible");
-    }else{
-      d3.selectAll(".link.create")
-        .style("visibility", "hidden");
-    }
+    svg.remove();
+    play();
 
 }
 
 function showHideFamily(){
     showFamily = !showFamily;
-    if (showFamily) {
-      d3.selectAll(".link.family")
-        .style("visibility", "visible");
-    }else{
-      d3.selectAll(".link.family")
-        .style("visibility", "hidden");
-    }
+    svg.remove();
+    play();
 
 }
 
 
 function showHideFight(){
     showFight = !showFight;
-    if (showFight) {
-      d3.selectAll(".link.fight")
-        .style("visibility", "visible");
-    }else{
-      d3.selectAll(".link.fight")
-        .style("visibility", "hidden");
-    }
-
+    svg.remove();
+    play();
 }
 
 function showHideAlliance(){
     showAlliance = !showAlliance;
-    if (showAlliance) {
-      d3.selectAll(".link.alliance")
-        .style("visibility", "visible");
-    }else{
-      d3.selectAll(".link.alliance")
-        .style("visibility", "hidden");
-    }
+    svg.remove();
+    play();
 
 }
 
