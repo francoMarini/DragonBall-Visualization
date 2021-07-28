@@ -15,7 +15,7 @@ var showAlliance = true;
 
 function play() {
 
-    d3.json("../data/DBZ_start.json", function(data) {
+    d3.json("../data/DBZ.json", function(data) {
 
         nodes = data["nodes"];
         links = data["links"];
@@ -62,7 +62,7 @@ function play() {
         .links(links)
         .size([svgSize.width, svgSize.height])
         .linkDistance(130)
-        .charge(-375)
+        .charge(-150)
         .on("tick", tick)
         .start();
 

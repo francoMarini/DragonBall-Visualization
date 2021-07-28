@@ -1,0 +1,1152 @@
+{
+    "nodes": [
+        {
+          "saga": "Saiyan Saga",
+            "name": "Goku",
+            "id": 0
+        },
+        {
+            "type": "Super Saiyan",
+            "saga": "Frieza Saga",
+            "name": "Goku SSJ",
+            "id": 1
+        },
+        {
+            "type": "Super Saiyan",
+            "saga": "Majin Buu Saga",
+            "name": "Goku SSJ2",
+            "id": 2
+        },
+        {
+            "type": "Super Saiyan",
+            "saga": "Majin Buu Saga",
+            "name": "Goku SSJ3",
+            "id": 3
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Vegeta",
+            "id": 4
+        },
+        {
+          "type": "Super Saiyan",
+          "saga": "Cell Games Saga",
+          "name": "Vegeta SSJ",
+          "id": 5
+        },
+        {
+          "type": "Super Saiyan",
+          "saga": "Majin Buu Saga",
+          "name": "Vegeta SSJ2",
+          "id": 6
+        },
+        {
+          "type": "Super Saiyan",
+          "saga": "Majin Buu Saga",
+          "name": "Majin Vegeta",
+          "id": 7
+        },
+        {
+            "type": "Fusion",
+            "saga": "Majin Buu Saga",
+            "name": "Vegito",
+            "id": 8
+        },
+        {
+            "type": "Super Saiyan",
+            "saga": "Majin Buu Saga",
+            "name": "Vegito SSJ",
+            "id": 9
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Gohan",
+            "id": 10
+        },
+        {
+            "type": "Super Saiyan",
+            "saga": "Cell Games Saga",
+            "name": "Gohan SSJ",
+            "id": 11
+        },
+        {
+            "type": "Super Saiyan",
+            "saga": "Cell Games Saga",
+            "name": "Gohan SSJ2",
+            "id": 12
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Trunks",
+            "id": 13
+        },
+        {
+            "type": "Super Saiyan",
+            "saga": "Cell Games Saga",
+            "name": "Trunks SSJ",
+            "id": 14
+        },
+        {
+            "type": "Super Saiyan",
+            "saga": "Cell Games Saga",
+            "name": "Trunks SSJ Rage",
+            "id": 15
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Goten",
+            "id": 16
+        },
+        {
+            "type": "Super Saiyan",
+            "saga": "Majin Buu Saga",
+            "name": "Goten SSJ",
+            "id": 17
+        },
+        {
+            "type": "Fusion",
+            "saga": "Majin Buu Saga",
+            "name": "Gotenks",
+            "id": 18
+        },
+        {
+            "type": "Super Saiyan",
+            "saga": "Majin Buu Saga",
+            "name": "Gotenks SSJ",
+            "id": 19
+        },
+        {
+            "type": "Super Saiyan",
+            "saga": "Majin Buu Saga",
+            "name": "Gotenks SSJ3",
+            "id": 20
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Piccolo",
+            "id": 21
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Tien",
+            "id": 22
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Raditz",
+            "id": 23
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Nappa",
+            "id": 24
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Krillin",
+            "id": 25
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Yamcha",
+            "id": 26
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Yajirobe",
+            "id": 27
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Master Roshi",
+            "id": 28
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Korin",
+            "id": 29
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Turtle",
+            "id": 30
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Oolong",
+            "id": 31
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Pual",
+            "id": 32
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Bulma",
+            "id": 33
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Dr. Brief",
+            "id": 34
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Chi-chi",
+            "id": 35
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Chiaotzu",
+            "id": 36
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Great Ape (Gohan)",
+            "id": 37
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Majin Buu (Evil)",
+            "id": 38
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Super Buu",
+            "id": 39
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Great Ape (Vegeta)",
+            "id": 40
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Majin Buu (Gotenks abs)",
+            "id": 41
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Majin Buu (Gohan abs)",
+            "id": 42
+        },
+        {
+           "type":"Final Form",
+            "saga": "Majin Buu Saga",
+            "name": "Kid Buu",
+            "id": 43
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Shenron",
+            "id": 44
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "King Kai",
+            "id": 45
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "King Yemma",
+            "id": 46
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Kami",
+            "id": 47
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Mr. Popo",
+            "id": 48
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Bubbles",
+            "id": 49
+        },
+        {
+            "saga": "Saiyan Saga",
+            "name": "Saibamen",
+            "id": 50
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Guru",
+            "id": 51
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Dende",
+            "id": 52
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Nail",
+            "id": 53
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Moori",
+            "id": 54
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Porunga",
+            "id": 55
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Ox King",
+            "id": 56
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Cui",
+            "id": 57
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Appule",
+            "id": 58
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Captain Ginyu",
+            "id": 59
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Recoome",
+            "id": 60
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Burter",
+            "id": 61
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Jeice",
+            "id": 62
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Guldo",
+            "id": 63
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Dodoria",
+            "id": 64
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Zarbon",
+            "id": 65
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Zarbon (Transformed)",
+            "id": 66
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Frieza (1st Form)",
+            "id": 67
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Frieza (2nd Form)",
+            "id": 68
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Frieza (3rd Form)",
+            "id": 69
+        },
+        {
+            "type": "Final Form",
+            "saga": "Frieza Saga",
+            "name": "Frieza (Final Form)",
+            "id": 70
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Android 8",
+            "id": 71
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Android 16",
+            "id": 72
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Android 17",
+            "id": 73
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Android 18",
+            "id": 74
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Android 19",
+            "id": 75
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Android 20",
+            "id": 76
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Baba",
+            "id": 77
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Mr. Satan",
+            "id": 78
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "King Cold",
+            "id": 79
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Mecha Frieza",
+            "id": 80
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Cell Jr.",
+            "id": 81
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Cell (1st Form)",
+            "id": 82
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Cell (2nd Form)",
+            "id": 83
+        },
+        {
+            "saga": "Frieza Saga",
+            "name": "Frieza",
+            "id": 84
+        },
+        {
+            "saga": "Cell Games Saga",
+            "name": "Cell",
+            "id": 85
+        },
+        {
+            "type":"Final Form",
+            "saga": "Cell Games Saga",
+            "name": "Cell (Perfect)",
+            "id": 86
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Great Saiyaman",
+            "id": 87
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Videl",
+            "id": 88
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Marron",
+            "id": 89
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Babidi",
+            "id": 90
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Dabura",
+            "id": 91
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Yakon",
+            "id": 92
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Pui Pui",
+            "id": 93
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Spopovich",
+            "id": 94
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Yamu",
+            "id": 95
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Elder Kai",
+            "id": 96
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Supreme Kai",
+            "id": 97
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Kibito",
+            "id": 98
+        },
+        {
+            "type":"Fusion",
+            "saga": "Majin Buu Saga",
+            "name": "Kibito Kai",
+            "id": 99
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Fat Buu",
+            "id": 100
+        },
+        {
+            "saga": "Majin Buu Saga",
+            "name": "Majin Buu",
+            "id": 101
+        }
+
+    ],
+    "links": [
+        {
+            "relation": "transformation",
+            "source": "0",
+            "target": "1"
+        },
+        {
+            "relation": "transformation",
+            "source": "0",
+            "target": "2"
+        },
+        {
+            "relation": "transformation",
+            "source": "0",
+            "target": "3"
+        },
+        {
+            "relation": "transformation",
+            "source": "0",
+            "target": "8"
+        },
+        {
+            "relation": "transformation",
+            "source": "0",
+            "target": "8"
+        },
+        {
+            "relation": "transformation",
+            "source": "8",
+            "target": "9"
+        },
+        {
+            "relation": "transformation",
+            "source": "4",
+            "target": "8"
+        },
+        {
+            "relation": "transformation",
+            "source": "4",
+            "target": "5"
+        },
+        {
+            "relation": "transformation",
+            "source": "4",
+            "target": "6"
+        },
+        {
+            "relation": "transformation",
+            "source": "4",
+            "target": "7"
+        },
+        {
+            "relation": "transformation",
+            "source": "10",
+            "target": "11"
+        },
+        {
+            "relation": "transformation",
+            "source": "10",
+            "target": "12"
+        },
+        {
+            "relation": "transformation",
+            "source": "10",
+            "target": "87"
+        },
+        {
+            "relation": "transformation",
+            "source": "13",
+            "target": "14"
+        },
+        {
+            "relation": "transformation",
+            "source": "13",
+            "target": "15"
+        },
+        {
+            "relation": "transformation",
+            "source": "13",
+            "target": "18"
+        },
+        {
+            "relation": "transformation",
+            "source": "18",
+            "target": "19"
+        },
+        {
+            "relation": "transformation",
+            "source": "18",
+            "target": "20"
+        },
+        {
+            "relation": "transformation",
+            "source": "16",
+            "target": "17"
+        },
+        {
+            "relation": "transformation",
+            "source": "4",
+            "target": "40"
+        },
+        {
+            "relation": "transformation",
+            "source": "10",
+            "target": "37"
+        },
+        {
+            "relation": "transformation",
+            "source": "65",
+            "target": "66"
+        },
+        {
+            "relation": "transformation",
+            "source": "84",
+            "target": "67"
+        },
+        {
+            "relation": "transformation",
+            "source": "84",
+            "target": "68"
+        },
+        {
+            "relation": "transformation",
+            "source": "84",
+            "target": "69"
+        },
+        {
+            "relation": "transformation",
+            "source": "84",
+            "target": "70"
+        },
+        {
+            "relation": "transformation",
+            "source": "84",
+            "target": "80"
+        },
+        {
+            "relation": "transformation",
+            "source": "85",
+            "target": "82"
+        },
+        {
+            "relation": "transformation",
+            "source": "85",
+            "target": "83"
+        },
+        {
+            "relation": "transformation",
+            "source": "85",
+            "target": "86"
+        },
+        {
+            "relation": "transformation",
+            "source": "101",
+            "target": "100"
+        },
+        {
+            "relation": "transformation",
+            "source": "101",
+            "target": "38"
+        },
+        {
+            "relation": "transformation",
+            "source": "101",
+            "target": "39"
+        },
+        {
+            "relation": "transformation",
+            "source": "101",
+            "target": "41"
+        },
+        {
+            "relation": "transformation",
+            "source": "101",
+            "target": "42"
+        },
+        {
+            "relation": "transformation",
+            "source": "101",
+            "target": "43"
+        },
+        {
+            "relation": "transformation",
+            "source": "98",
+            "target": "99"
+        },
+        {
+            "relation": "transformation",
+            "source": "97",
+            "target": "99"
+        },
+        {
+            "relation": "family",
+            "source": "0",
+            "target": "10"
+        },
+        {
+            "relation": "family",
+            "source": "0",
+            "target": "16"
+        },
+        {
+            "relation": "family",
+            "source": "0",
+            "target": "23"
+        },
+        {
+            "relation": "family",
+            "source": "0",
+            "target": "35"
+        },
+        {
+            "relation": "family",
+            "source": "35",
+            "target": "56"
+        },
+        {
+            "relation": "family",
+            "source": "10",
+            "target": "35"
+        },
+        {
+            "relation": "family",
+            "source": "16",
+            "target": "35"
+        },
+        {
+            "relation": "family",
+            "source": "10",
+            "target": "16"
+        },
+        {
+            "relation": "family",
+            "source": "4",
+            "target": "13"
+        },
+        {
+            "relation": "family",
+            "source": "4",
+            "target": "33"
+        },
+        {
+            "relation": "family",
+            "source": "13",
+            "target": "33"
+        },
+        {
+            "relation": "family",
+            "source": "33",
+            "target": "34"
+        },
+        {
+            "relation": "family",
+            "source": "25",
+            "target": "74"
+        },
+        {
+            "relation": "family",
+            "source": "25",
+            "target": "89"
+        },
+        {
+            "relation": "family",
+            "source": "74",
+            "target": "89"
+        },
+        {
+            "relation": "family",
+            "source": "73",
+            "target": "74"
+        },
+        {
+            "relation": "family",
+            "source": "28",
+            "target": "77"
+        },
+        {
+            "relation": "family",
+            "source": "96",
+            "target": "97"
+        },
+        {
+            "relation": "family",
+            "source": "51",
+            "target": "21"
+        },
+        {
+            "relation": "family",
+            "source": "51",
+            "target": "47"
+        },
+        {
+            "relation": "family",
+            "source": "51",
+            "target": "52"
+        },
+        {
+            "relation": "family",
+            "source": "51",
+            "target": "53"
+        },
+        {
+            "relation": "family",
+            "source": "51",
+            "target": "54"
+        },
+        {
+            "relation": "family",
+            "source": "88",
+            "target": "78"
+        },
+        {
+            "relation": "alliance",
+            "source": "0",
+            "target": "21"
+        },
+        {
+            "relation": "alliance",
+            "source": "0",
+            "target": "22"
+        },
+        {
+            "relation": "alliance",
+            "source": "0",
+            "target": "25"
+        },
+        {
+            "relation": "alliance",
+            "source": "0",
+            "target": "26"
+        },
+        {
+            "relation": "alliance",
+            "source": "0",
+            "target": "27"
+        },
+        {
+            "relation": "alliance",
+            "source": "0",
+            "target": "36"
+        },
+        {
+            "relation": "alliance",
+            "source": "0",
+            "target": "45"
+        },
+        {
+            "relation": "alliance",
+            "source": "0",
+            "target": "47"
+        },
+        {
+            "relation": "alliance",
+            "source": "0",
+            "target": "28"
+        },
+        {
+            "relation": "alliance",
+            "source": "0",
+            "target": "29"
+        },
+        {
+            "relation": "alliance",
+            "source": "28",
+            "target": "30"
+        },
+        {
+            "relation": "alliance",
+            "source": "28",
+            "target": "31"
+        },
+        {
+            "relation": "alliance",
+            "source": "28",
+            "target": "32"
+        },
+        {
+            "relation": "alliance",
+            "source": "28",
+            "target": "29"
+        },
+        {
+            "relation": "alliance",
+            "source": "26",
+            "target": "32"
+        },
+        {
+            "relation": "alliance",
+            "source": "45",
+            "target": "46"
+        },
+        {
+            "relation": "alliance",
+            "source": "46",
+            "target": "47"
+        },
+        {
+            "relation": "alliance",
+            "source": "47",
+            "target": "48"
+        },
+        {
+            "relation": "alliance",
+            "source": "4",
+            "target": "23"
+        },
+        {
+            "relation": "alliance",
+            "source": "4",
+            "target": "24"
+        },
+        {
+            "relation": "alliance",
+            "source": "23",
+            "target": "24"
+        },
+        {
+            "relation": "alliance",
+            "source": "4",
+            "target": "84"
+        },
+        {
+            "relation": "alliance",
+            "source": "84",
+            "target": "59"
+        },
+        {
+            "relation": "alliance",
+            "source": "59",
+            "target": "60"
+        },
+        {
+            "relation": "alliance",
+            "source": "59",
+            "target": "61"
+        },
+        {
+            "relation": "alliance",
+            "source": "59",
+            "target": "62"
+        },
+        {
+            "relation": "alliance",
+            "source": "59",
+            "target": "63"
+        },
+        {
+            "relation": "alliance",
+            "source": "84",
+            "target": "64"
+        },
+        {
+            "relation": "alliance",
+            "source": "84",
+            "target": "65"
+        },
+        {
+            "relation": "alliance",
+            "source": "84",
+            "target": "57"
+        },
+        {
+            "relation": "alliance",
+            "source": "84",
+            "target": "58"
+        },
+        {
+            "relation": "alliance",
+            "source": "64",
+            "target": "65"
+        },
+        {
+            "relation": "alliance",
+            "source": "57",
+            "target": "58"
+        },
+        {
+            "relation": "alliance",
+            "source": "52",
+            "target": "97"
+        },
+        {
+            "relation": "alliance",
+            "source": "52",
+            "target": "98"
+        },
+        {
+            "relation": "alliance",
+            "source": "52",
+            "target": "45"
+        },
+        {
+            "relation": "alliance",
+            "source": "52",
+            "target": "96"
+        },
+        {
+            "relation": "alliance",
+            "source": "97",
+            "target": "98"
+        },
+        {
+            "relation": "alliance",
+            "source": "98",
+            "target": "45"
+        },
+        {
+            "relation": "alliance",
+            "source": "45",
+            "target": "96"
+        },
+        {
+            "relation": "alliance",
+            "source": "96",
+            "target": "98"
+        },
+        {
+            "relation": "alliance",
+            "source": "45",
+            "target": "97"
+        },
+        {
+            "relation": "alliance",
+            "source": "90",
+            "target": "101"
+        },
+        {
+            "relation": "alliance",
+            "source": "88",
+            "target": "10"
+        },
+        {
+            "relation": "alliance",
+            "source": "45",
+            "target": "49"
+        },
+        {
+            "relation": "alliance",
+            "source": "79",
+            "target": "80"
+        },
+        {
+            "relation": "alliance",
+            "source": "90",
+            "target": "91"
+        },
+        {
+            "relation": "alliance",
+            "source": "90",
+            "target": "92"
+        },
+        {
+            "relation": "alliance",
+            "source": "90",
+            "target": "93"
+        },
+        {
+            "relation": "alliance",
+            "source": "90",
+            "target": "94"
+        },
+        {
+            "relation": "alliance",
+            "source": "90",
+            "target": "95"
+        },
+        {
+            "relation": "create",
+            "source": "47",
+            "target": "44"
+        },
+        {
+            "relation": "create",
+            "source": "24",
+            "target": "50"
+        },
+        {
+            "relation": "create",
+            "source": "51",
+            "target": "55"
+        },
+        {
+            "relation": "create",
+            "source": "85",
+            "target": "81"
+        },
+        {
+            "relation": "create",
+            "source": "76",
+            "target": "85"
+        },
+        {
+            "relation": "create",
+            "source": "76",
+            "target": "71"
+        },
+        {
+            "relation": "create",
+            "source": "76",
+            "target": "72"
+        },
+        {
+            "relation": "create",
+            "source": "76",
+            "target": "73"
+        },
+        {
+            "relation": "create",
+            "source": "76",
+            "target": "74"
+        },
+        {
+            "relation": "create",
+            "source": "76",
+            "target": "75"
+        }
+    ]
+}
