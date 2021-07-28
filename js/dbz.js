@@ -103,7 +103,12 @@ function play() {
             .attr("class", function(d) {
                 return d.type;
             })
-            .attr("r", 30)
+            .attr("r", function(d) {
+              if (d.state== "t") {
+                return 10;
+              }
+                return 20;
+            })
             .style("fill",function(d) {
                 return "url(#image-" + d.id +")";
             })
