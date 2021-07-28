@@ -1,23 +1,26 @@
 {
     "nodes": [
         {
-          "saga": "Saiyan Saga",
+           "saga": "Saiyan Saga",
             "name": "Goku",
             "id": 0
         },
         {
+            "state":"t",
             "type": "Dragon",
             "saga": "Frieza Saga",
             "name": "Goku SSJ",
             "id": 1
         },
         {
+           "state":"t",
             "type": "Saiyan",
             "saga": "Majin Buu Saga",
             "name": "Goku SSJ2",
             "id": 2
         },
         {
+            "state":"t",
             "type": "Namekian",
             "saga": "Majin Buu Saga",
             "name": "Goku SSJ3",
@@ -29,18 +32,21 @@
             "id": 4
         },
         {
+          "state":"t",
           "type": "Android",
           "saga": "Cell Games Saga",
           "name": "Vegeta SSJ",
           "id": 5
         },
         {
+          "state":"t",
           "type": "Super Saiyan",
           "saga": "Majin Buu Saga",
           "name": "Vegeta SSJ2",
           "id": 6
         },
         {
+          "state":"t",
           "type": "Super Saiyan",
           "saga": "Majin Buu Saga",
           "name": "Majin Vegeta",
@@ -53,6 +59,7 @@
             "id": 8
         },
         {
+            "state":"t",
             "type": "Super Saiyan",
             "saga": "Majin Buu Saga",
             "name": "Vegito SSJ",
@@ -64,12 +71,14 @@
             "id": 10
         },
         {
+            "state":"t",
             "type": "Super Saiyan",
             "saga": "Cell Games Saga",
             "name": "Gohan SSJ",
             "id": 11
         },
         {
+            "state":"t",
             "type": "Super Saiyan",
             "saga": "Cell Games Saga",
             "name": "Gohan SSJ2",
@@ -81,12 +90,14 @@
             "id": 13
         },
         {
+            "state":"t",
             "type": "Super Saiyan",
             "saga": "Cell Games Saga",
             "name": "Trunks SSJ",
             "id": 14
         },
         {
+            "state":"t",
             "type": "Super Saiyan",
             "saga": "Cell Games Saga",
             "name": "Trunks SSJ Rage",
@@ -98,6 +109,7 @@
             "id": 16
         },
         {
+            "state":"t",
             "type": "Super Saiyan",
             "saga": "Majin Buu Saga",
             "name": "Goten SSJ",
@@ -110,12 +122,14 @@
             "id": 18
         },
         {
+            "state":"t",
             "type": "Super Saiyan",
             "saga": "Majin Buu Saga",
             "name": "Gotenks SSJ",
             "id": 19
         },
         {
+            "state":"t",
             "type": "Super Saiyan",
             "saga": "Majin Buu Saga",
             "name": "Gotenks SSJ3",
@@ -202,37 +216,44 @@
             "id": 36
         },
         {
+            "state":"t",
             "saga": "Saiyan Saga",
             "name": "Great Ape (Gohan)",
             "id": 37
         },
         {
+            "state":"t",
             "saga": "Majin Buu Saga",
             "name": "Majin Buu (Evil)",
             "id": 38
         },
         {
+            "state":"t",
             "saga": "Majin Buu Saga",
             "name": "Super Buu",
             "id": 39
         },
         {
+            "state":"t",
             "saga": "Saiyan Saga",
             "name": "Great Ape (Vegeta)",
             "id": 40
         },
         {
+            "state":"t",
             "saga": "Majin Buu Saga",
             "name": "Majin Buu (Gotenks abs)",
             "id": 41
         },
         {
+            "state":"t",
             "saga": "Majin Buu Saga",
             "name": "Majin Buu (Gohan abs)",
             "id": 42
         },
         {
-           "type":"Final Form",
+            "state":"t",
+            "type":"Final Form",
             "saga": "Majin Buu Saga",
             "name": "Kid Buu",
             "id": 43
@@ -348,26 +369,31 @@
             "id": 65
         },
         {
+            "state":"t",
             "saga": "Frieza Saga",
             "name": "Zarbon (Transformed)",
             "id": 66
         },
         {
+            "state":"t",
             "saga": "Frieza Saga",
             "name": "Frieza (1st Form)",
             "id": 67
         },
         {
+            "state":"t",
             "saga": "Frieza Saga",
             "name": "Frieza (2nd Form)",
             "id": 68
         },
         {
+            "state":"t",
             "saga": "Frieza Saga",
             "name": "Frieza (3rd Form)",
             "id": 69
         },
         {
+            "state":"t",
             "type": "Final Form",
             "saga": "Frieza Saga",
             "name": "Frieza (Final Form)",
@@ -419,6 +445,7 @@
             "id": 79
         },
         {
+            "state":"t",
             "saga": "Cell Games Saga",
             "name": "Mecha Frieza",
             "id": 80
@@ -429,11 +456,13 @@
             "id": 81
         },
         {
+            "state":"t",
             "saga": "Cell Games Saga",
             "name": "Cell (1st Form)",
             "id": 82
         },
         {
+            "state":"t",
             "saga": "Cell Games Saga",
             "name": "Cell (2nd Form)",
             "id": 83
@@ -449,12 +478,14 @@
             "id": 85
         },
         {
+            "state":"t",
             "type":"Final Form",
             "saga": "Cell Games Saga",
             "name": "Cell (Perfect)",
             "id": 86
         },
         {
+            "state":"t",
             "saga": "Majin Buu Saga",
             "name": "Great Saiyaman",
             "id": 87
@@ -521,6 +552,7 @@
             "id": 99
         },
         {
+            "state":"t",
             "saga": "Majin Buu Saga",
             "name": "Fat Buu",
             "id": 100
@@ -1070,6 +1102,16 @@
         },
         {
             "relation": "alliance",
+            "source": "78",
+            "target": "0"
+        },
+        {
+            "relation": "alliance",
+            "source": "78",
+            "target": "10"
+        },
+        {
+            "relation": "alliance",
             "source": "79",
             "target": "80"
         },
@@ -1147,6 +1189,66 @@
             "relation": "create",
             "source": "76",
             "target": "75"
+        },
+        {
+            "relation": "fight",
+            "source": "0",
+            "target": "4"
+        },
+        {
+            "relation": "fight",
+            "source": "0",
+            "target": "23"
+        },
+        {
+            "relation": "fight",
+            "source": "21",
+            "target": "23"
+        },
+        {
+            "relation": "fight",
+            "source": "20",
+            "target": "39"
+        },
+        {
+            "relation": "fight",
+            "source": "3",
+            "target": "100"
+        },
+        {
+            "relation": "fight",
+            "source": "21",
+            "target": "73"
+        },
+        {
+            "relation": "fight",
+            "source": "9",
+            "target": "42"
+        },
+        {
+            "relation": "fight",
+            "source": "2",
+            "target": "7"
+        },
+        {
+            "relation": "fight",
+            "source": "12",
+            "target": "86"
+        },
+        {
+            "relation": "fight",
+            "source": "1",
+            "target": "70"
+        },
+        {
+            "relation": "fight",
+            "source": "15",
+            "target": "80"
+        },
+        {
+            "relation": "fight",
+            "source": "2",
+            "target": "43"
         }
     ]
 }

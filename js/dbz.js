@@ -63,7 +63,11 @@ function play() {
         .nodes(d3.values(nodes))
         .links(links)
         .size([svgSize.width, svgSize.height])
-        .linkDistance(130)
+        .linkDistance(function(link) {
+            if (link.relation=="transformation")   // Gli archi relativi alle trasformazioni saranno più corti
+               return 30;
+            return 160;
+        })
         .charge(-150)
         .on("tick", tick)
         .start();
@@ -77,9 +81,6 @@ function play() {
                 return ("link s" + source + " t" + target + " " +  d.relation);
             })
 
-      // Nascondo i combattimenti
-      d3.selectAll(".link.fight")
-        .style("visibility", "hidden");
 
         var node = svg.selectAll(".node")
             .data(force.nodes())
