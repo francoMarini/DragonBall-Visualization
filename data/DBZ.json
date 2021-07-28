@@ -1,53 +1,49 @@
 {
     "nodes": [
         {
-           "saga": "Saiyan Saga",
+            "type":"Saiyan",
+            "saga": "Saiyan Saga",
             "name": "Goku",
             "id": 0
         },
         {
             "state":"t",
-            "type": "Dragon",
             "saga": "Frieza Saga",
             "name": "Goku SSJ",
             "id": 1
         },
         {
            "state":"t",
-            "type": "Saiyan",
             "saga": "Majin Buu Saga",
             "name": "Goku SSJ2",
             "id": 2
         },
         {
             "state":"t",
-            "type": "Namekian",
             "saga": "Majin Buu Saga",
             "name": "Goku SSJ3",
             "id": 3
         },
         {
+            "type":"Saiyan",
             "saga": "Saiyan Saga",
             "name": "Vegeta",
             "id": 4
         },
         {
           "state":"t",
-          "type": "Android",
           "saga": "Cell Games Saga",
           "name": "Vegeta SSJ",
           "id": 5
         },
         {
           "state":"t",
-          "type": "Super Saiyan",
           "saga": "Majin Buu Saga",
           "name": "Vegeta SSJ2",
           "id": 6
         },
         {
           "state":"t",
-          "type": "Super Saiyan",
           "saga": "Majin Buu Saga",
           "name": "Majin Vegeta",
           "id": 7
@@ -60,57 +56,54 @@
         },
         {
             "state":"t",
-            "type": "Super Saiyan",
             "saga": "Majin Buu Saga",
             "name": "Vegito SSJ",
             "id": 9
         },
         {
+            "type":"Saiyan",
             "saga": "Saiyan Saga",
             "name": "Gohan",
             "id": 10
         },
         {
             "state":"t",
-            "type": "Super Saiyan",
             "saga": "Cell Games Saga",
             "name": "Gohan SSJ",
             "id": 11
         },
         {
             "state":"t",
-            "type": "Super Saiyan",
             "saga": "Cell Games Saga",
             "name": "Gohan SSJ2",
             "id": 12
         },
         {
+            "type":"Saiyan",
             "saga": "Cell Games Saga",
             "name": "Trunks",
             "id": 13
         },
         {
             "state":"t",
-            "type": "Super Saiyan",
             "saga": "Cell Games Saga",
             "name": "Trunks SSJ",
             "id": 14
         },
         {
             "state":"t",
-            "type": "Super Saiyan",
             "saga": "Cell Games Saga",
             "name": "Trunks SSJ Rage",
             "id": 15
         },
         {
+            "type":"Saiyan",
             "saga": "Majin Buu Saga",
             "name": "Goten",
             "id": 16
         },
         {
             "state":"t",
-            "type": "Super Saiyan",
             "saga": "Majin Buu Saga",
             "name": "Goten SSJ",
             "id": 17
@@ -123,19 +116,18 @@
         },
         {
             "state":"t",
-            "type": "Super Saiyan",
             "saga": "Majin Buu Saga",
             "name": "Gotenks SSJ",
             "id": 19
         },
         {
             "state":"t",
-            "type": "Super Saiyan",
             "saga": "Majin Buu Saga",
             "name": "Gotenks SSJ3",
             "id": 20
         },
         {
+            "type": "Namekian",
             "saga": "Saiyan Saga",
             "name": "Piccolo",
             "id": 21
@@ -146,11 +138,13 @@
             "id": 22
         },
         {
+            "type":"Saiyan",
             "saga": "Saiyan Saga",
             "name": "Raditz",
             "id": 23
         },
         {
+            "type":"Saiyan",
             "saga": "Saiyan Saga",
             "name": "Nappa",
             "id": 24
@@ -253,12 +247,12 @@
         },
         {
             "state":"t",
-            "type":"Final Form",
             "saga": "Majin Buu Saga",
             "name": "Kid Buu",
             "id": 43
         },
         {
+            "type": "Dragon",
             "saga": "Saiyan Saga",
             "name": "Shenron",
             "id": 44
@@ -274,6 +268,7 @@
             "id": 46
         },
         {
+            "type": "Namekian",
             "saga": "Saiyan Saga",
             "name": "Kami",
             "id": 47
@@ -294,26 +289,31 @@
             "id": 50
         },
         {
+            "type": "Namekian",
             "saga": "Frieza Saga",
             "name": "Guru",
             "id": 51
         },
         {
+            "type": "Namekian",
             "saga": "Frieza Saga",
             "name": "Dende",
             "id": 52
         },
         {
+            "type": "Namekian",
             "saga": "Frieza Saga",
             "name": "Nail",
             "id": 53
         },
         {
+            "type": "Namekian",
             "saga": "Frieza Saga",
             "name": "Moori",
             "id": 54
         },
         {
+            "type": "Dragon",
             "saga": "Frieza Saga",
             "name": "Porunga",
             "id": 55
@@ -394,37 +394,42 @@
         },
         {
             "state":"t",
-            "type": "Final Form",
             "saga": "Frieza Saga",
             "name": "Frieza (Final Form)",
             "id": 70
         },
         {
+            "type": "Android",
             "saga": "Cell Games Saga",
             "name": "Android 8",
             "id": 71
         },
         {
+            "type": "Android",
             "saga": "Cell Games Saga",
             "name": "Android 16",
             "id": 72
         },
         {
+            "type": "Android",
             "saga": "Cell Games Saga",
             "name": "Android 17",
             "id": 73
         },
         {
+            "type": "Android",
             "saga": "Cell Games Saga",
             "name": "Android 18",
             "id": 74
         },
         {
+            "type": "Android",
             "saga": "Cell Games Saga",
             "name": "Android 19",
             "id": 75
         },
         {
+            "type": "Android",
             "saga": "Cell Games Saga",
             "name": "Android 20",
             "id": 76
@@ -479,7 +484,6 @@
         },
         {
             "state":"t",
-            "type":"Final Form",
             "saga": "Cell Games Saga",
             "name": "Cell (Perfect)",
             "id": 86

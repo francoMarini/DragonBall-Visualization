@@ -310,7 +310,7 @@ console.log("ce entro");
             if (status=="Android") return "grey";
             else return "grey";
         })
-        .attr("transform", "scale(1.5)")
+        .attr("transform", "scale(1.8)")
         .style("stroke-width", "2px");
 
 }
