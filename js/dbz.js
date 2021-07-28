@@ -140,6 +140,33 @@ function play() {
           .style("font-size", "25px")
           .style("visibility", "hidden");
 
+      d3.selectAll(".node")
+          .append("text")
+          .attr("class", "saga")
+          .attr("x", 85)
+          .attr("y", 35)
+          .text(function(d) { if(d.saga != undefined) {
+              return "Saga: " + d.saga; }})
+          .style("fill", "white")
+          .style("font-size", "17px")
+          .style("visibility", "hidden");
+          
+     d3.selectAll(".node")
+          .append("text")
+          .attr("class", "category")
+          .attr("x", 85)
+          .attr("y", function(d) {
+              if(d.saga == undefined)
+                  return 35;
+              else return 50
+          })
+          .text(function(d) { if (d.type != undefined){
+              return "Category: " + d.type; }})
+          .style("fill", "white")
+          .style("font-size", "17px")
+          .style("visibility", "hidden");
+
+
         function tick() {
             link
                 .attr("x1", function(d) { return d.source.x; })
@@ -188,6 +215,14 @@ function nodeMouseover() {
         .style("visibility", "visible")
         .style("font-size", "40px");
 
+    // Per vedere il testo
+    d3.select(this).select(".saga").transition()
+        .delay(400)
+        .style("visibility", "visible");
+
+    d3.select(this).select(".category").transition()
+        .delay(400)
+        .style("visibility", "visible");
 
     d3.selectAll(linkCssClass)
         .classed("highlight", true)
@@ -216,6 +251,12 @@ function nodeMouseout() {
         .style("visibility", "hidden")
         .attr("fill", "black")
         .style("font-size", "25px");
+
+        // Per nasconderei testi
+   d3.select(this).select(".saga").transition()
+        .style("visibility", "hidden");
+   d3.select(this).select(".category").transition()
+        .style("visibility", "hidden");
 
     d3.selectAll(".link")
         .classed("highlight", false)
