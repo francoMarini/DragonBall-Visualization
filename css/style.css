@@ -42,6 +42,7 @@ form{
     position:absolute;
     right: 7%;
     top: 16%;
+    background-image: url("http://static.tumblr.com/lxn1yld/Hnxnxaqya/space.gif")
 
 }
 
@@ -82,20 +83,20 @@ label {
 
 }
 label[for^=transformation] {
-    color: royalblue;
+    color: gold;
 }
 label[for^=family] {
-    color: pink;
+    color: mediumblue;
 }
 label[for^=create] {
-    color: tomato;
+    color: salmon;
 }
 label[for^=alliance] {
-    color: green;
+    color: darkgreen;
 }
 
 label[for^=fight] {
-    color: black;
+    color: ivory;
 }
 
 .lightning{
@@ -143,7 +144,7 @@ animation-delay: 0s;
 }
 .link.transformation {
     fill: black;
-    stroke: royalblue;
+    stroke: gold;
     stroke-width: 2px;
     stroke-opacity:0.5;
 }
@@ -151,7 +152,7 @@ animation-delay: 0s;
 
 .highlight.transformation {
     opacity: 1 !important;
-    stroke: royalblue !important;
+    stroke: gold !important;
     stroke-width: 4px !important;
     stroke-opacity: 1 !important;
 }
@@ -160,7 +161,7 @@ animation-delay: 0s;
 
 .link.create {
     fill: black;
-    stroke: tomato;
+    stroke: salmon;
     stroke-width: 2px;
     stroke-opacity:0.5;
 }
@@ -168,7 +169,7 @@ animation-delay: 0s;
 
 .highlight.create {
     opacity: 1 !important;
-    stroke: tomato !important;
+    stroke: salmon !important;
     stroke-width: 4px !important;
     stroke-opacity: 1 !important;
 }
@@ -176,7 +177,7 @@ animation-delay: 0s;
 
 .link.family {
     fill: black;
-    stroke: pink;
+    stroke: mediumblue;
     stroke-width: 2px;
     stroke-opacity:0.5;
 }
@@ -184,37 +185,37 @@ animation-delay: 0s;
 
 .highlight.family {
     opacity: 1 !important;
-    stroke: pink !important;
+    stroke: mediumblue !important;
     stroke-width: 4px !important;
     stroke-opacity: 1 !important;
 }
 
 .link.fight {
     fill: black;
-    stroke: black;
+    stroke: ivory;
     stroke-width: 4px;
-    stroke-opacity:0.5;
+    stroke-opacity:0.6;
 }
 
 
 .highlight.fight {
-    opacity: 0.8 !important;
-    stroke: black !important;
+    opacity: 0.9 !important;
+    stroke: ivory!important;
     stroke-width: 8px !important;
-    stroke-opacity: 0.5 !important;
+    stroke-opacity: 0.6 !important;
 }
 
 .link.alliance {
     fill: black;
-    stroke: green;
+    stroke: darkorange;
     stroke-width: 2px;
-    stroke-opacity:0.5;
+    stroke-opacity: 0.5;
 }
 
 
 .highlight.alliance {
     opacity: 1 !important;
-    stroke: green !important;
+    stroke: darkgreen !important;
     stroke-width: 4px !important;
     stroke-opacity: 1 !important;
 }
@@ -229,7 +230,7 @@ animation-delay: 0s;
 .btn .one {
     z-index: 4;
     margin-left: 83%;
-    margin-top: 19%;
+    margin-top: 20%;
     font-size: 13px;
     width: 8em;
     height: 2em;
@@ -257,11 +258,11 @@ animation-delay: 0s;
 .btn .one::after {right: 0; z-index: -2;}
 
 .btn .one:hover {
-    color: darkorange;
-    border-left-color: darkorange;
-    border-bottom-color: darkorange;
-    border-top-color: darkorange;
-    border-right-color: darkorange;
+    color: yellow;
+    border-left-color: yellow;
+    border-bottom-color: yellow;
+    border-top-color: yellow;
+    border-right-color: yellow;
   -webkit-transition: border-color 0s ease-out 0s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
   transition: border-color 0s ease-out 0s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
@@ -286,7 +287,7 @@ animation-delay: 0s;
 .btn .two {
     z-index: 4;
     margin-left: 83%;
-    margin-top: 22%;
+    margin-top: 22.5%;
     font-size: 13px;
     width: 8em;
     height: 2em;
@@ -403,7 +404,7 @@ animation-delay: 0s;
 .btn .four {
     z-index: 4;
     margin-left: 83%;
-    margin-top: 28%;
+    margin-top: 27.5%;
     font-size: 13px;
     width: 8em;
     height: 2em;
@@ -431,11 +432,11 @@ animation-delay: 0s;
 .btn .four::after {right: 0; z-index: -2;}
 
 .btn .four:hover {
-    color: grey;
-    border-left-color: grey;
-    border-bottom-color: grey;
-    border-top-color: grey;
-    border-right-color: grey;
+    color: deeppink;
+    border-left-color: deeppink;
+    border-bottom-color: deeppink;
+    border-top-color: deeppink;
+    border-right-color: deeppink;
   -webkit-transition: border-color 0s ease-out 0s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
   transition: border-color 0s ease-out 0s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
@@ -460,7 +461,7 @@ animation-delay: 0s;
 .btn .five {
     z-index: 4;
     margin-left: 83%;
-    margin-top: 31%;
+    margin-top: 30%;
     font-size: 13px;
     width: 8em;
     height: 2em;
@@ -488,11 +489,11 @@ animation-delay: 0s;
 .btn .five::after {right: 0; z-index: -2;}
 
 .btn .five:hover {
-    color: darkgreen;
-    border-left-color: darkgreen;
-    border-bottom-color: darkgreen;
-    border-top-color: darkgreen;
-    border-right-color: darkgreen;
+    color: green;
+    border-left-color: green;
+    border-bottom-color: green;
+    border-top-color: green;
+    border-right-color: green;
   -webkit-transition: border-color 0s ease-out 0s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
   transition: border-color 0s ease-out 0s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }

@@ -33,7 +33,7 @@ function play() {
               links.push(link);
             if (link.relation=="fight" && showFight)
               links.push(link);
-            if (link.relation=="transformation")
+            if (link.relation=="transformation" && showTransformation)
               links.push(link);
         });
 
@@ -150,7 +150,7 @@ function play() {
           .style("fill", "white")
           .style("font-size", "17px")
           .style("visibility", "hidden");
-          
+
      d3.selectAll(".node")
           .append("text")
           .attr("class", "category")
@@ -199,10 +199,10 @@ function nodeMouseover() {
              return "scale(2)";
         })
         .style("stroke",function(d) {
-          if (d.type=="Saiyan") return "red";
+          if (d.type=="Saiyan") return "yellow";
           if (d.type=="Fusion") return "blue";
-          if (d.type=="Dragon") return "white";
-          if (d.type=="Android") return "grey";
+          if (d.type=="Dragon") return "red";
+          if (d.type=="Android") return "deeppink";
           if (d.type=="Namekian") return "green";
           else return "grey";
         })
@@ -299,6 +299,13 @@ function deleteDuplicates(array) {
 }
 
 
+function showHideTransformation(){
+    showTransformation = !showTransformation;
+    svg.remove();
+    play();
+
+}
+
 function showHideCreate(){
     showCreate = !showCreate;
     svg.remove();
@@ -348,11 +355,11 @@ console.log("ce entro");
         .duration(400)
         .style("opacity", "1")
         .style("stroke", function()  {
-            if (status=="Saiyan") return "red";
+            if (status=="Saiyan") return "yellow";
             if (status=="Namekian") return "green";
-            if (status=="Dragon") return "white";
+            if (status=="Dragon") return "red";
             if (status=="Fusion") return "blue";
-            if (status=="Android") return "grey";
+            if (status=="Android") return "deeppink";
             else return "grey";
         })
         .attr("transform", "scale(1.8)")
