@@ -136,7 +136,7 @@ function play() {
           .attr("x", 30)
           .attr("dy", ".35em")
           .text(function(d) { return d.name; })
-          .style("fill", "white")
+          .style("fill", "orange")
           .style("font-size", "25px")
           .style("visibility", "hidden");
 
@@ -147,7 +147,7 @@ function play() {
           .attr("y", 35)
           .text(function(d) { if(d.saga != undefined) {
               return "Saga: " + d.saga; }})
-          .style("fill", "white")
+          .style("fill", "orange")
           .style("font-size", "17px")
           .style("visibility", "hidden");
 
@@ -162,7 +162,7 @@ function play() {
           })
           .text(function(d) { if (d.type != undefined){
               return "Category: " + d.type; }})
-          .style("fill", "white")
+          .style("fill", "orange")
           .style("font-size", "17px")
           .style("visibility", "hidden");
 
