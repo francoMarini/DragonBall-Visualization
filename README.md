@@ -57,4 +57,4 @@ Il progetto è stato testato e viene visualizzato correttamente sui seguenti bro
 - **Microsoft Edge**, Versione 91.0.864.41 (Build ufficiale) (64 bit)
 
 ## Anteprima
-<img src="https://i.ibb.co/WBDF1QJ/anteprima3.jpg" width="900" />
+<img src="https://i.ibb.co/bs1ysRD/anteprima.jpg" width="900" />
