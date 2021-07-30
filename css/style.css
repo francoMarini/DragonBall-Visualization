@@ -144,7 +144,7 @@ animation-delay: 0s;
 }
 .link.transformation {
     fill: black;
-    stroke: gold;
+    stroke: yellow;
     stroke-width: 2px;
     stroke-opacity:0.5;
 }
@@ -152,7 +152,7 @@ animation-delay: 0s;
 
 .highlight.transformation {
     opacity: 1 !important;
-    stroke: gold !important;
+    stroke: yellow !important;
     stroke-width: 4px !important;
     stroke-opacity: 1 !important;
 }
@@ -207,7 +207,7 @@ animation-delay: 0s;
 
 .link.alliance {
     fill: black;
-    stroke: darkorange;
+    stroke: darkgreen;
     stroke-width: 2px;
     stroke-opacity: 0.5;
 }
