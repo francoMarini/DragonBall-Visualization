@@ -5,9 +5,12 @@ var svgSize = null;
 var statusSelector = null;
 var svgSize = null;
 var svg=null;
+var link=null;
+var node=null;
+var primaVolta=true;
+var force=null;
 
 // Variabili per mostrare e nascondere le relazioni
-
 var showTransformation = true;
 var showCreate = true;
 var showFamily = true;
@@ -50,46 +53,53 @@ function play() {
 
         var relations = deleteDuplicates(notUniqueRelations);
 
-        svg = d3.select("body").append("svg")
-            .attr("id", "graph")
-            .call(d3.behavior.zoom().on("zoom", function () {                     // Implementazione Zoom
-                svg.attr("transform", " scale(" + d3.event.scale + ")")
-            }))
+        if (primaVolta){
+          svg = d3.select("body").append("svg")
+              .attr("id", "graph")
+              .call(d3.behavior.zoom().on("zoom", function () {                     // Implementazione Zoom
+                  svg.attr("transform", " scale(" + d3.event.scale + ")")
+              }))
 
-        var defs = svg.append('svg:defs');
-        nodes.forEach(element => {
-            defs.append('svg:pattern')
-                .attr('id', "image-" + element.id)
-                .attr('width', 1)
-                .attr('height', 1)
-                .attr("patternContentUnits", "objectBoundingBox")
-                .append('svg:image')
-                .attr('xlink:href', "../data/imgs/" + element.name + ".jpg")
-                .attr('x', 0)
-                .attr('y', 0)
-                .attr('width', 1)
-                .attr('height', 1)
-                .attr("preserveAspectRatio","xMinYMin slice");
-        });
+          var defs = svg.append('svg:defs');
+          nodes.forEach(element => {
+              defs.append('svg:pattern')
+                  .attr('id', "image-" + element.id)
+                  .attr('width', 1)
+                  .attr('height', 1)
+                  .attr("patternContentUnits", "objectBoundingBox")
+                  .append('svg:image')
+                  .attr('xlink:href', "../data/imgs/" + element.name + ".jpg")
+                  .attr('x', 0)
+                  .attr('y', 0)
+                  .attr('width', 1)
+                  .attr('height', 1)
+                  .attr("preserveAspectRatio","xMinYMin slice");
+          });
 
-        svgSize = document.getElementById('graph').getBoundingClientRect();
+          svgSize = document.getElementById('graph').getBoundingClientRect();
 
 
-        var force = d3.layout.force()
-        .nodes(d3.values(nodes))
-        .links(links)
-        .size([svgSize.width, svgSize.height])
-        .linkDistance(function(link) {
-            if (link.relation=="transformation")   // Gli archi relativi alle trasformazioni saranno più corti
-               return 30;
-            return 60;
-        })
-        .charge(-450)
-        .gravity(0.34)
-        .on("tick", tick)
-        .start();
+          force = d3.layout.force()
+          .nodes(d3.values(nodes))
+          .links(links)
+          .size([svgSize.width, svgSize.height])
+          .linkDistance(function(link) {
+              if (link.relation=="transformation")   // Gli archi relativi alle trasformazioni saranno più corti
+                 return 30;
+              return 60;
+          })
+          .charge(-450)
+          .gravity(0.34)
+          .on("tick", tick)
+          .start();
+        }
 
-        var link = svg.selectAll(".link")
+       else{
+          force.links(links).start();
+          node.remove();
+      }
+
+      link = svg.selectAll(".link")
             .data(force.links())
             .enter().append("line")
             .attr("class", function(d) {
@@ -99,7 +109,7 @@ function play() {
             })
 
 
-        var node = svg.selectAll(".node")
+       node = svg.selectAll(".node")
             .data(force.nodes())
             .enter().append("g")
             .attr("class", function(d) {
@@ -301,21 +311,24 @@ function deleteDuplicates(array) {
 
 function showHideTransformation(){
     showTransformation = !showTransformation;
-    svg.remove();
+    link.remove();
+    primaVolta=false;
     play();
 
 }
 
 function showHideCreate(){
     showCreate = !showCreate;
-    svg.remove();
+    link.remove();
+    primaVolta=false;
     play();
 
 }
 
 function showHideFamily(){
     showFamily = !showFamily;
-    svg.remove();
+    link.remove();
+    primaVolta=false;
     play();
 
 }
@@ -323,19 +336,20 @@ function showHideFamily(){
 
 function showHideFight(){
     showFight = !showFight;
-    svg.remove();
+    link.remove();
+    primaVolta=false;
     play();
 }
 
 function showHideAlliance(){
     showAlliance = !showAlliance;
-    svg.remove();
+    link.remove();
+    primaVolta=false;
     play();
 
 }
 
 function statusMouseover(status) {
-console.log("ce entro");
     if (status == "Saiyan") statusSelector = ".Fusion, .Namekian, .Dragon, .Android, .none";
     else if (status == "Fusion") statusSelector =".Saiyan, .Namekian, .Dragon, .Android, .none";
     else if (status == "Namekian") statusSelector =".Saiyan, .Fusion, .Dragon, .Android, .none";
